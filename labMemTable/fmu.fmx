@@ -1,0 +1,412 @@
+object fm: Tfm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 328
+  ClientWidth = 648
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Grid1: TGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 16.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 137.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    RowCount = 7
+    Options = [Editing, ColumnResize, ColumnMove, ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+    Viewport.Width = 373.000000000000000000
+    Viewport.Height = 112.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 7
+    Text = #1055#1091#1092' '#1043'. '#1043'.'
+    Position.X = 16.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Text = '+9999999999'
+    Position.X = 168.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Text = '20'
+    Position.X = 256.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 44.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit4: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Text = '13000,00'
+    Position.X = 304.000000000000000000
+    Position.Y = 208.000000000000000000
+  end
+  object buSave: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 9
+    Text = 'Save'
+    OnClick = buSaveClick
+  end
+  object buCancel: TButton
+    Position.X = 320.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 8
+    Text = 'Cancel'
+    OnClick = buCancelClick
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object edFilter: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 16.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object buFilterOn: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 272.000000000000000000
+    TabOrder = 13
+    Text = 'FilterOn'
+    OnClick = buFilterOnClick
+  end
+  object buFilterOff: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 272.000000000000000000
+    TabOrder = 12
+    Text = 'FilterOff'
+    OnClick = buFilterOffClick
+  end
+  object buAddAge1: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = #1044#1086#1073#1072#1074#1080#1090#1100' 1 '#1075#1086#1076
+    OnClick = buAddAge1Click
+  end
+  object buAddAllMoney: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = #1044#1086#1073#1072#1074#1080#1090#1100' '#1074#1089#1077#1084' '#1087#1086' 100 '#1088#1091#1073#1083#1077#1081
+    OnClick = buAddAllMoneyClick
+  end
+  object ckReadOnlyGrid: TCheckBox
+    Position.X = 424.000000000000000000
+    Position.Y = 152.000000000000000000
+    TabOrder = 17
+    Text = 'ReadOnly Grid'
+    OnChange = ckReadOnlyGridChange
+  end
+  object ckReadOnlyTableChange: TCheckBox
+    Position.X = 424.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 16
+    Text = 'ReadOnly table'
+    OnChange = ckReadOnlyTableChangeChange
+  end
+  object edL: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 18
+    Text = '20'
+    Position.X = 424.000000000000000000
+    Position.Y = 16.000000000000000000
+  end
+  object buLocate: TButton
+    Position.X = 424.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = 'Locate'
+    OnClick = buLocateClick
+  end
+  object buLookup: TButton
+    Position.X = 424.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = 'Lookup'
+    OnClick = buLookupClick
+  end
+  object buGetAllMoney: TButton
+    Position.X = 424.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 21
+    Text = 'Get All Money'
+    OnClick = buGetAllMoneyClick
+  end
+  object buMin: TButton
+    Position.X = 424.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 22
+    Text = 'Min'
+    OnClick = buMinClick
+  end
+  object edFileName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 23
+    Position.X = 536.000000000000000000
+    Position.Y = 16.000000000000000000
+  end
+  object buSaveTable: TButton
+    Position.X = 536.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 25
+    Text = 'Save Table'
+    OnClick = buSaveTableClick
+  end
+  object buLoadTable: TButton
+    Position.X = 536.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+    Text = 'Load Table'
+    OnClick = buLoadTableClick
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 432.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 28
+    Viewport.Width = 205.000000000000000000
+    Viewport.Height = 109.000000000000000000
+  end
+  object ta: TFDMemTable
+    Active = True
+    BeforeScroll = taBeforeScroll
+    AfterScroll = taAfterScroll
+    FieldDefs = <
+      item
+        Name = 'FIO'
+        DataType = ftString
+        Size = 70
+      end
+      item
+        Name = 'Phone'
+        DataType = ftString
+        Size = 15
+      end
+      item
+        Name = 'Age'
+        DataType = ftSmallint
+      end
+      item
+        Name = 'Money'
+        DataType = ftCurrency
+        Precision = 19
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 376
+    Top = 16
+    Content = {
+      414442530F00511DAB030000FF00010001FF02FF030400040000007400610005
+      000A0000005400610062006C0065000600000000000700000800320000000900
+      00FF0AFF0B040006000000460049004F00050006000000460049004F000C0001
+      0000000E000D000F004600000010000111000112000113000600000024041804
+      1E04140001150001160001170006000000460049004F00180046000000FEFF0B
+      04000A000000500068006F006E00650005000A000000500068006F006E006500
+      0C00020000000E000D000F000F00000010000111000112000113000E00000022
+      0435043B04350444043E043D0414000115000116000117000A00000050006800
+      6F006E00650018000F000000FEFF0B0400060000004100670065000500060000
+      004100670065000C00030000000E00190010000111000112000113000E000000
+      12043E0437044004300441044204140001150001160001170006000000410067
+      006500FEFF0B04000A0000004D006F006E006500790005000A0000004D006F00
+      6E00650079000C00040000000E001A001B00130000001C000400000010000111
+      000112000113000C000000140435043D044C0433043804140001150001160001
+      17000A0000004D006F006E00650079001D00130000001E0004000000FEFEFF1F
+      FEFF20FEFF21FF22230000000000FF2400000C000000C8E2E0EDEEE220C82E20
+      CA2E01000B0000002B37383431343535383134020003000300804F1200000000
+      00FEFEFF22230001000000FF24000010000000D1F2E5EFE0EDE5EDEAEE20CF2E
+      20C82E01000B0000002B3131313131313131313102004E000300000000000000
+      0000FEFEFF2223000200000026002500FF2400000C000000D0F3E1F6EEE220C8
+      2E20C82E01000B0000002B3935383434353734313202000700030000CA9A3B00
+      000000FEFEFF2223000300000026002500FF2400000B000000C1F3E3E0E920D3
+      2E20D32E01000B0000002B3333333333333333333302001E00030000C2EB0B00
+      000000FEFEFF22230004000000FF2400000D000000CBEEEBE2E0F3E020CF2E20
+      CA2E01000B0000002B3335383235313437383502000A000300403FAD05000000
+      00FEFEFF22230005000000FF2400000A000000CBEEEBFF20CB2E20CB2E01000B
+      0000002B3737373737373737373702001400030020E9EF0100000000FEFEFF22
+      230006000000FF24000009000000CFF3F420C32E20C32E01000B0000002B3939
+      393939393939393902001400030080A4BF0700000000FEFEFEFEFEFF27FEFF28
+      290009000000FF2AFEFEFE0E004D0061006E0061006700650072001E00550070
+      0064006100740065007300520065006700690073007400720079001200540061
+      0062006C0065004C006900730074000A005400610062006C00650008004E0061
+      006D006500140053006F0075007200630065004E0061006D0065000A00540061
+      00620049004400240045006E0066006F0072006300650043006F006E00730074
+      007200610069006E00740073001E004D0069006E0069006D0075006D00430061
+      00700061006300690074007900180043006800650063006B004E006F0074004E
+      0075006C006C00140043006F006C0075006D006E004C006900730074000C0043
+      006F006C0075006D006E00100053006F00750072006300650049004400180064
+      00740041006E007300690053007400720069006E006700100044006100740061
+      0054007900700065000800530069007A00650014005300650061007200630068
+      00610062006C006500120041006C006C006F0077004E0075006C006C00080042
+      006100730065000E00430061007000740069006F006E0014004F0041006C006C
+      006F0077004E0075006C006C0012004F0049006E005500700064006100740065
+      0010004F0049006E00570068006500720065001A004F0072006900670069006E
+      0043006F006C004E0061006D006500140053006F007500720063006500530069
+      007A0065000E006400740049006E007400310036001400640074004300750072
+      00720065006E0063007900120050007200650063006900730069006F006E000A
+      005300630061006C0065001E0053006F00750072006300650050007200650063
+      006900730069006F006E00160053006F0075007200630065005300630061006C
+      0065001C0043006F006E00730074007200610069006E0074004C006900730074
+      00100056006900650077004C006900730074000E0052006F0077004C00690073
+      007400060052006F0077000A0052006F0077004900440010004F007200690067
+      0069006E0061006C0016007200730055006E006300680061006E006700650064
+      001A0052006F0077005000720069006F00720053007400610074006500180052
+      0065006C006100740069006F006E004C006900730074001C0055007000640061
+      007400650073004A006F00750072006E0061006C001200530061007600650050
+      006F0069006E0074000E004300680061006E00670065007300}
+    object taFIO: TStringField
+      DisplayLabel = #1060#1048#1054
+      DisplayWidth = 22
+      FieldName = 'FIO'
+      Size = 70
+    end
+    object taPhone: TStringField
+      DisplayLabel = #1058#1077#1083#1077#1092#1086#1085
+      DisplayWidth = 15
+      FieldName = 'Phone'
+      Size = 15
+    end
+    object taAge: TSmallintField
+      DisplayLabel = #1042#1086#1079#1088#1072#1089#1090
+      DisplayWidth = 10
+      FieldName = 'Age'
+    end
+    object taMoney: TCurrencyField
+      DisplayLabel = #1044#1077#1085#1100#1075#1080
+      DisplayWidth = 12
+      FieldName = 'Money'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ta
+    ScopeMappings = <>
+    Left = 80
+    Top = 104
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 36
+    Top = 101
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'FIO'
+          Width = 150
+        end
+        item
+          MemberName = 'Phone'
+          Width = 90
+        end
+        item
+          MemberName = 'Age'
+          Width = 40
+        end
+        item
+          MemberName = 'Money'
+          Width = 70
+        end>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'FIO'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Phone'
+      Control = Edit2
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Age'
+      Control = Edit3
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Money'
+      Control = Edit4
+      Track = False
+    end
+  end
+  object FDStanStorageJSONLink1: TFDStanStorageJSONLink
+    Left = 192
+    Top = 104
+  end
+end

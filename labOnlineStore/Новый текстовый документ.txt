@@ -1,0 +1,14 @@
+begin
+  insert into card_product (
+        card_id,
+        product_id,
+        product_price,
+        quantity)
+  values (
+  :card_id,
+  :product_id,
+  (select p.price from product p where p.id = :product_id),
+  l
+  );
+  suspend;
+end

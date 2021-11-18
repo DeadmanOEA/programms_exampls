@@ -1,0 +1,172 @@
+object fm: Tfm
+  Left = 0
+  Top = 0
+  Caption = 'labGenPassword'
+  ClientHeight = 520
+  ClientWidth = 337
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 337.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 337.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = #1043#1077#1085#1077#1088#1072#1090#1086#1088' '#1087#1072#1088#1086#1083#1077#1081
+      TabOrder = 0
+    end
+    object buAbout: TButton
+      Align = Right
+      Position.X = 289.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'infotoolbutton'
+      TabOrder = 1
+      Text = 'buAbout'
+      OnClick = buAboutClick
+    end
+  end
+  object ly: TLayout
+    Align = Center
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 290.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object edPassword: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      ReadOnly = True
+      TextSettings.HorzAlign = Center
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Scale.X = 1.500000000000000000
+      Scale.Y = 1.500000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = '<Password>'
+    end
+    object buPassword: TButton
+      Align = Top
+      Margins.Top = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 78.000000000000000000
+      Size.Width = 270.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = #1043#1077#1085#1077#1088#1080#1088#1086#1074#1072#1090#1100
+      OnClick = buPasswordClick
+    end
+    object edLength: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      Cursor = crIBeam
+      Min = 5.000000000000000000
+      Max = 20.000000000000000000
+      Value = 9.000000000000000000
+      TextSettings.HorzAlign = Center
+      Position.X = 160.000000000000000000
+      Position.Y = 376.000000000000000000
+      Margins.Left = 150.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      object Label2: TLabel
+        Align = Vertical
+        Position.X = -144.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = #1044#1083#1080#1085#1072' '#1087#1072#1088#1086#1083#1103
+        TabOrder = 0
+      end
+    end
+    object ckLower: TCheckBox
+      Align = Top
+      Margins.Top = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 142.000000000000000000
+      Size.Width = 270.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = #1057#1080#1084#1074#1086#1083#1099' '#1074' '#1085#1080#1078#1085#1077#1084' '#1088#1077#1075#1080#1089#1090#1088#1077
+    end
+    object ckSpec: TCheckBox
+      Align = Top
+      Margins.Top = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 259.000000000000000000
+      Size.Width = 270.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = #1057#1087#1077#1094#1080#1072#1083#1100#1085#1099#1077' '#1089#1080#1084#1074#1086#1083#1099
+    end
+    object ckNumber: TCheckBox
+      Align = Top
+      Margins.Top = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 220.000000000000000000
+      Size.Width = 270.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = #1062#1080#1092#1088#1099
+    end
+    object ckUpper: TCheckBox
+      Align = Top
+      Margins.Top = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 181.000000000000000000
+      Size.Width = 270.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = #1057#1080#1084#1074#1086#1083#1099' '#1074' '#1074#1077#1088#1093#1085#1077#1084' '#1088#1077#1075#1080#1089#1090#1088#1077
+    end
+    object ckRus: TCheckBox
+      Align = Top
+      Margins.Top = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 298.000000000000000000
+      Size.Width = 270.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = #1056#1091#1089#1089#1082#1080#1077' '#1089#1080#1084#1074#1086#1083#1099
+    end
+    object ckEng: TCheckBox
+      Align = Top
+      Margins.Top = 20.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 337.000000000000000000
+      Size.Width = 270.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = #1040#1085#1075#1083#1080#1081#1089#1082#1080#1077' '#1089#1080#1084#1074#1086#1083#1099' '#1089#1080#1084#1074#1086#1083#1099
+    end
+  end
+end

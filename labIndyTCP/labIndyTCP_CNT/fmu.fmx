@@ -1,0 +1,157 @@
+object fm: Tfm
+  Left = 0
+  Top = 0
+  Caption = 'Client'
+  ClientHeight = 526
+  ClientWidth = 304
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 304.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object edHost: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Text = '127.0.0.1'
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object edPort: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = '8091'
+      Position.X = 160.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object buConnect: TButton
+      Action = acConnect
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      TabOrder = 6
+    end
+    object buDisconnect: TButton
+      Action = acDisconnect
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 112.000000000000000000
+      Position.Y = 48.000000000000000000
+      TabOrder = 5
+    end
+    object buTime: TButton
+      Action = acGetTime
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 16.000000000000000000
+      Position.Y = 88.000000000000000000
+      TabOrder = 4
+    end
+    object buStr: TButton
+      Action = acGetStr
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 16.000000000000000000
+      Position.Y = 120.000000000000000000
+      TabOrder = 3
+    end
+    object buImage: TButton
+      Action = acGetImage
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 16.000000000000000000
+      Position.Y = 152.000000000000000000
+      TabOrder = 2
+    end
+    object im: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Position.X = 112.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 97.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object buInf: TButton
+      Action = acServerInfo
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 208.000000000000000000
+      Position.Y = 48.000000000000000000
+      TabOrder = 8
+    end
+    object buGIndex: TButton
+      Action = acGIndex
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 224.000000000000000000
+      Position.Y = 112.000000000000000000
+      TabOrder = 9
+    end
+  end
+  object me: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    Align = Client
+    Size.Width = 304.000000000000000000
+    Size.Height = 333.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 304.000000000000000000
+    Viewport.Height = 333.000000000000000000
+  end
+  object IdTCPClient: TIdTCPClient
+    ConnectTimeout = 0
+    IPVersion = Id_IPv4
+    Port = 0
+    ReadTimeout = -1
+    Left = 256
+    Top = 16
+  end
+  object al: TActionList
+    OnUpdate = alUpdate
+    Left = 256
+    Top = 64
+    object acConnect: TAction
+      Text = 'Connect'
+      OnExecute = acConnectExecute
+    end
+    object acDisconnect: TAction
+      Text = 'Disconnect'
+      OnExecute = acDisconnectExecute
+    end
+    object acGetTime: TAction
+      Text = 'Get Time'
+      OnExecute = acGetTimeExecute
+    end
+    object acGetStr: TAction
+      Text = 'Get Str'
+      OnExecute = acGetStrExecute
+    end
+    object acGetImage: TAction
+      Text = 'Get Image'
+      OnExecute = acGetImageExecute
+    end
+    object acServerInfo: TAction
+      Text = 'Server Info'
+      OnExecute = acServerInfoExecute
+    end
+    object acGIndex: TAction
+      Text = 'GIndex'
+      OnExecute = acGIndexExecute
+    end
+  end
+end

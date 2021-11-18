@@ -1,0 +1,336 @@
+object fm: Tfm
+  Left = 0
+  Top = 0
+  Caption = 'labOnlineStore'
+  ClientHeight = 498
+  ClientWidth = 377
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object tc: TTabControl
+    Align = Client
+    Size.Width = 377.000000000000000000
+    Size.Height = 450.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 4
+    TabPosition = PlatformDefault
+    Sizes = (
+      377s
+      401s
+      377s
+      401s
+      377s
+      401s
+      377s
+      401s
+      377s
+      401s)
+    object tiMenu: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiMenu'
+      object GridPanelLayout1: TGridPanelLayout
+        Align = Client
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 377.000000000000000000
+        Size.Height = 401.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = buCateg
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = buFeedback
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = buCorz
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        object buCateg: TButton
+          Align = Client
+          Size.Width = 168.500000000000000000
+          Size.Height = 180.500000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = #1050#1072#1090#1077#1075#1086#1088#1080#1080
+          OnClick = buCategClick
+        end
+        object buFeedback: TButton
+          Align = Client
+          Size.Width = 168.500000000000000000
+          Size.Height = 180.500000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = #1054#1090#1079#1099#1074#1099
+          OnClick = buFeedbackClick
+        end
+        object buCorz: TButton
+          Align = Client
+          Size.Width = 168.500000000000000000
+          Size.Height = 180.500000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1054#1090#1079#1099#1074#1099
+          OnClick = buFeedbackClick
+        end
+      end
+    end
+    object tiCat: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiCat'
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 0
+        Align = Client
+        Size.Width = 377.000000000000000000
+        Size.Height = 353.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnItemClick = ListView1ItemClick
+      end
+      object ToolBar2: TToolBar
+        Align = Bottom
+        Position.Y = 353.000000000000000000
+        Size.Width = 377.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Button1: TButton
+          Align = Left
+          Size.Width = 73.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1053#1072#1079#1072#1076
+          OnClick = Button1Click
+        end
+      end
+    end
+    object tiProd: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiProd'
+      object ListView2: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 0
+        Align = Client
+        Size.Width = 377.000000000000000000
+        Size.Height = 353.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object ToolBar3: TToolBar
+        Align = Bottom
+        Position.Y = 353.000000000000000000
+        Size.Width = 377.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Button2: TButton
+          Tag = 1
+          Align = Left
+          Size.Width = 73.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1053#1072#1079#1072#1076
+          OnClick = Button1Click
+        end
+      end
+    end
+    object tiFeedback: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 75.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiFeedback'
+      object ListView3: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 0
+        Align = Client
+        Size.Width = 377.000000000000000000
+        Size.Height = 353.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object ToolBar4: TToolBar
+        Align = Bottom
+        Position.Y = 353.000000000000000000
+        Size.Width = 377.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Button3: TButton
+          Align = Left
+          Size.Width = 73.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1053#1072#1079#1072#1076
+          OnClick = Button1Click
+        end
+        object buAdd: TButton
+          Align = Right
+          Position.X = 277.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = #1044#1086#1073#1072#1074#1080#1090#1100
+        end
+      end
+    end
+    object tiFeedC: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 77.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiFeedC'
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 377.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 377.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'OnlineStore'
+      TabOrder = 1
+    end
+    object buAbout: TButton
+      Align = Right
+      Position.X = 329.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'infotoolbutton'
+      TabOrder = 0
+      Text = 'buAbout'
+      OnClick = buAboutClick
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dm.quCategory
+    ScopeMappings = <>
+    Left = 184
+    Top = 96
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 228
+    Top = 93
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'NAME'
+      Control = ListView1
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'NAME'
+      Control = ListView2
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField3: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'FIO'
+      Control = ListView3
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = dm.quProduct
+    ScopeMappings = <>
+    Left = 328
+    Top = 96
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = dm.quFeedback
+    ScopeMappings = <>
+    Left = 280
+    Top = 96
+  end
+end

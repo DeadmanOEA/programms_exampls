@@ -1,0 +1,826 @@
+object fm: Tfm
+  Left = 0
+  Top = 0
+  Caption = 'labConverter'
+  ClientHeight = 537
+  ClientWidth = 352
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 352.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 352.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #1050#1086#1085#1074#1077#1088#1090#1086#1088
+      TabOrder = 0
+    end
+    object buBack: TButton
+      Align = Left
+      Position.Y = 1.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      TabOrder = 1
+      OnClick = buBackClick
+    end
+    object buAbout: TButton
+      Align = Right
+      Position.X = 304.000000000000000000
+      Position.Y = 1.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'infotoolbutton'
+      TabOrder = 2
+      Text = 'buAbout'
+    end
+  end
+  object tc: TTabControl
+    Align = Client
+    Size.Width = 352.000000000000000000
+    Size.Height = 487.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 4
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    OnChange = tcChange
+    Sizes = (
+      352s
+      438s
+      352s
+      438s
+      352s
+      438s
+      352s
+      438s
+      352s
+      438s)
+    object tiMenu: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 70.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiMenu'
+      object GridPanelLayout1: TGridPanelLayout
+        Align = Fit
+        Padding.Left = 4.000000000000000000
+        Padding.Top = 4.000000000000000000
+        Padding.Right = 4.000000000000000000
+        Padding.Bottom = 4.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 352.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ColumnCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = buTime
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = buDistance
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = buQuantitiesInfo
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = buTemperature
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            Value = 50.000000000000000000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object buTime: TButton
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 168.000000000000000000
+          Size.Height = 168.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = #1042#1088#1077#1084#1103
+          TextSettings.Font.Size = 25.000000000000000000
+          OnClick = buTimeClick
+        end
+        object buDistance: TButton
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 168.000000000000000000
+          Size.Height = 168.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = #1056#1072#1089#1089#1090#1086#1103#1085#1080#1077
+          TextSettings.Font.Size = 25.000000000000000000
+          OnClick = buDistanceClick
+        end
+        object buQuantitiesInfo: TButton
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 168.000000000000000000
+          Size.Height = 168.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1080#1085#1092#1086#1088#1084#1072#1094#1080#1080
+          TextSettings.Font.Size = 25.000000000000000000
+          TextSettings.WordWrap = True
+          OnClick = buQuantitiesInfoClick
+        end
+        object buTemperature: TButton
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 168.000000000000000000
+          Size.Height = 168.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1058#1077#1084#1087#1077#1088#1072#1090#1091#1088#1072
+          TextSettings.Font.Size = 25.000000000000000000
+          OnClick = buTemperatureClick
+        end
+      end
+    end
+    object tiTime: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 70.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiTime'
+      object ListBox1: TListBox
+        Align = Client
+        Padding.Left = 100.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 438.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        ItemHeight = 44.000000000000000000
+        ItemWidth = 352.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 352.000000000000000000
+        Viewport.Height = 438.000000000000000000
+        object ListBoxItem1: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1084#1089
+          object edMs: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTimeAllKeyUp
+          end
+        end
+        object ListBoxItem2: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 44.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = #1089#1077#1082
+          object edSec: TEdit
+            Tag = 1
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTimeAllKeyUp
+          end
+        end
+        object ListBoxItem3: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = #1084#1080#1085
+          object edMinutes: TEdit
+            Tag = 2
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTimeAllKeyUp
+          end
+        end
+        object ListBoxItem4: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 132.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = #1095#1072#1089#1099
+          object edHours: TEdit
+            Tag = 3
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTimeAllKeyUp
+          end
+        end
+        object ListBoxItem5: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 176.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = #1089#1091#1090#1082#1080
+          object edDays: TEdit
+            Tag = 4
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTimeAllKeyUp
+          end
+        end
+        object ListBoxItem6: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 220.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = #1075#1086#1076#1072
+          object edYears: TEdit
+            Tag = 5
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTimeAllKeyUp
+          end
+        end
+      end
+    end
+    object tiDistance: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 70.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiDistance'
+      object ListBox2: TListBox
+        Align = Client
+        Padding.Left = 100.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 438.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        ItemHeight = 44.000000000000000000
+        ItemWidth = 352.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 352.000000000000000000
+        Viewport.Height = 438.000000000000000000
+        object ListBoxItem7: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1085#1084
+          object edNm: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edDistanceAllKeyUp
+          end
+        end
+        object ListBoxItem8: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 44.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = #1084#1082#1084
+          object edMkm: TEdit
+            Tag = 1
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edDistanceAllKeyUp
+          end
+        end
+        object ListBoxItem9: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = #1084#1084
+          object edMm: TEdit
+            Tag = 2
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edDistanceAllKeyUp
+          end
+        end
+        object ListBoxItem10: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 132.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = #1089#1084
+          object edSm: TEdit
+            Tag = 3
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edDistanceAllKeyUp
+          end
+        end
+        object ListBoxItem11: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 176.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = #1076#1084
+          object edDm: TEdit
+            Tag = 4
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edDistanceAllKeyUp
+          end
+        end
+        object ListBoxItem12: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 220.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = #1084
+          object Edm: TEdit
+            Tag = 5
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edDistanceAllKeyUp
+          end
+        end
+      end
+    end
+    object tiQl: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 70.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiQl'
+      object ListBox3: TListBox
+        Align = Client
+        Padding.Left = 100.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 438.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        ItemHeight = 44.000000000000000000
+        ItemWidth = 352.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 352.000000000000000000
+        Viewport.Height = 438.000000000000000000
+        object ListBoxItem13: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #1082#1073#1080#1090
+          object edKbi: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edQIAllKeyUp
+          end
+        end
+        object ListBoxItem14: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 44.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = #1082#1073#1072#1081#1090
+          object edKba: TEdit
+            Tag = 1
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edQIAllKeyUp
+          end
+        end
+        object ListBoxItem15: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = #1084#1073#1080#1090
+          object edMbi: TEdit
+            Tag = 2
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edQIAllKeyUp
+          end
+        end
+        object ListBoxItem16: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 132.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = #1084#1073#1072#1081#1090
+          object edMba: TEdit
+            Tag = 3
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edQIAllKeyUp
+          end
+        end
+        object ListBoxItem17: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 176.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = #1075#1073#1080#1090
+          object edGbi: TEdit
+            Tag = 4
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edQIAllKeyUp
+          end
+        end
+        object ListBoxItem18: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 220.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = #1075#1073#1072#1081#1090
+          object edGba: TEdit
+            Tag = 5
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edQIAllKeyUp
+          end
+        end
+      end
+    end
+    object tiTemperature: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 72.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiTemperature'
+      object ListBox4: TListBox
+        Align = Client
+        Padding.Left = 100.000000000000000000
+        Size.Width = 352.000000000000000000
+        Size.Height = 438.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        ItemHeight = 44.000000000000000000
+        ItemWidth = 352.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 352.000000000000000000
+        Viewport.Height = 438.000000000000000000
+        object ListBoxItem19: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = #176'C'
+          object edC: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTempAllKeyUp
+          end
+        end
+        object ListBoxItem20: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 44.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = #176'F'
+          object edF: TEdit
+            Tag = 1
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTempAllKeyUp
+          end
+        end
+        object ListBoxItem21: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 352.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'K'
+          object edK: TEdit
+            Tag = 2
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTempAllKeyUp
+          end
+        end
+        object ListBoxItem22: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 132.000000000000000000
+          TabOrder = 3
+          Text = #176'D'
+          object edD: TEdit
+            Tag = 1
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTempAllKeyUp
+          end
+        end
+        object ListBoxItem23: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 176.000000000000000000
+          TabOrder = 4
+          Text = #176'Ra'
+          object edRa: TEdit
+            Tag = 1
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTempAllKeyUp
+          end
+        end
+        object ListBoxItem24: TListBoxItem
+          Padding.Left = 100.000000000000000000
+          Padding.Right = 5.000000000000000000
+          Position.Y = 220.000000000000000000
+          TabOrder = 5
+          Text = #176'N'
+          object edN: TEdit
+            Tag = 1
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 100.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 247.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            OnKeyUp = edTempAllKeyUp
+          end
+        end
+      end
+    end
+  end
+end
