@@ -1,0 +1,117 @@
+object fm: Tfm
+  Left = 0
+  Top = 0
+  Caption = 'labSaveState'
+  ClientHeight = 546
+  ClientWidth = 321
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnSaveState = FormSaveState
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 321.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 321.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 25.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'labSaveState'
+      TabOrder = 0
+    end
+  end
+  object TabControl1: TTabControl
+    Position.X = 64.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      200s
+      151s
+      200s
+      151s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 100.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object DateEdit1: TDateEdit
+        Date = 43431.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 62.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+      object TimeEdit1: TTimeEdit
+        Time = 0.841416412037037000
+        Position.X = 16.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 100.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      object TrackBar1: TTrackBar
+        CanParentFocus = True
+        Orientation = Horizontal
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object Switch1: TSwitch
+        IsChecked = False
+        Position.X = 80.000000000000000000
+        Position.Y = 81.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+    end
+  end
+end

@@ -1,0 +1,110 @@
+object Fm: TFm
+  Left = 0
+  Top = 0
+  Caption = 'labStopwatch'
+  ClientHeight = 311
+  ClientWidth = 425
+  Fill.Color = claYellowgreen
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object buStart: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 208.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Start'
+    TextSettings.Font.Size = 35.000000000000000000
+    OnClick = buStartClick
+  end
+  object buStop: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 208.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Stop'
+    TextSettings.Font.Size = 35.000000000000000000
+    OnClick = buStopClick
+  end
+  object laTime: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 35.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = '0:00:00'
+    TabOrder = 3
+  end
+  object me: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    StyledSettings = [Family, Style, FontColor]
+    TextSettings.Font.Size = 20.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Viewport.Width = 181.000000000000000000
+    Viewport.Height = 213.000000000000000000
+  end
+  object Circle: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 208.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Circle'
+    TextSettings.Font.Size = 35.000000000000000000
+    ParentShowHint = False
+    ShowHint = False
+    OnClick = CircleClick
+  end
+  object Clear: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 208.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Clear'
+    TextSettings.Font.Size = 35.000000000000000000
+    OnClick = ClearClick
+  end
+  object tm: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = tmTimer
+    Left = 176
+    Top = 40
+  end
+  object Pause: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 208.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Pause / Continue'
+    TextSettings.Font.Size = 25.000000000000000000
+    OnClick = PauseClick
+  end
+end
