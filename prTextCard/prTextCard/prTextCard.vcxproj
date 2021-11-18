@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{937B5AA2-2255-41EF-A384-BF9E0F034C22}</ProjectGuid>
+    <RootNamespace>prTextCard</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Deadman97\Desktop\prTextCard;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0419</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgDetMake.h" />
+    <ClInclude Include="DLGDopInf.h" />
+    <ClInclude Include="MashCard.h" />
+    <ClInclude Include="prTextCard.h" />
+    <ClInclude Include="prTextCardDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TechCard.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgDetMake.cpp" />
+    <ClCompile Include="DLGDopInf.cpp" />
+    <ClCompile Include="MashCard.cpp" />
+    <ClCompile Include="prTextCard.cpp" />
+    <ClCompile Include="prTextCardDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TechCard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="prTextCard.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\prTextCard.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\1.bmp" />
+    <Image Include="..\pic\bitmap1.bmp" />
+    <Image Include="..\pic\card\1txt.bmp" />
+    <Image Include="..\pic\card\A\Oпер.bmp" />
+    <Image Include="..\pic\card\A\PM.bmp" />
+    <Image Include="..\pic\card\A\Код, наименование операции.bmp" />
+    <Image Include="..\pic\card\A\Наименование операции.bmp" />
+    <Image Include="..\pic\card\A\Обозначение документа1111.bmp" />
+    <Image Include="..\pic\card\A\Опер.bmp" />
+    <Image Include="..\pic\card\A\РМ.bmp" />
+    <Image Include="..\pic\card\A\Уч..bmp" />
+    <Image Include="..\pic\card\A\Уч.bmp" />
+    <Image Include="..\pic\card\A\Цех.bmp" />
+    <Image Include="..\pic\card\B\CM.bmp" />
+    <Image Include="..\pic\card\B\EH.bmp" />
+    <Image Include="..\pic\card\B\P.bmp" />
+    <Image Include="..\pic\card\B\Код, наименование оборудования.bmp" />
+    <Image Include="..\pic\card\B\КОИД.bmp" />
+    <Image Include="..\pic\card\B\КР.bmp" />
+    <Image Include="..\pic\card\B\Кшт..bmp" />
+    <Image Include="..\pic\card\B\ОП.bmp" />
+    <Image Include="..\pic\card\B\Проф.bmp" />
+    <Image Include="..\pic\card\B\Тпз.bmp" />
+    <Image Include="..\pic\card\B\Тшт..bmp" />
+    <Image Include="..\pic\card\B\Тшт..png" />
+    <Image Include="..\pic\card\B\УТ.bmp" />
+    <Image Include="..\pic\card\M K\EB.bmp" />
+    <Image Include="..\pic\card\M K\EH11111.bmp" />
+    <Image Include="..\pic\card\M K\КИ.bmp" />
+    <Image Include="..\pic\card\M K\Н. расх..bmp" />
+    <Image Include="..\pic\card\M K\Наименование деталей, сборочных единиц, материалов.bmp" />
+    <Image Include="..\pic\card\M K\Обозначение, код.bmp" />
+    <Image Include="..\pic\card\M K\ОПП.bmp" />
+    <Image Include="..\pic\card\Окно %27Детали в сборке%27\Наименование детали.bmp" />
+    <Image Include="..\pic\card\Окно %27Детали в сборке%27\Позиция детали в сборке.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Безымянный.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Доп. инф.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Ед. норм.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Код клас. групп.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Литера.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Н. контр.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Наименование изделия.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Наименование организации.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Обазначение документа.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Обазначение изделия.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Обазначение номера изделия.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Обозначение основного док.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Общее количество листов.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Порядковый номер листа.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Принял.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Разраб.bmp" />
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Утвердил.bmp" />
+    <Image Include="..\pic\card\Приспособления, вспомогательный инструмент(2).bmp" />
+    <Image Include="..\pic\card\Служебные символы.bmp" />
+    <Image Include="..\pic\Dim.bmp" />
+    <Image Include="..\pic\dlg1Text1.bmp" />
+    <Image Include="..\pic\dlg1Text2.bmp" />
+    <Image Include="..\pic\menu\LoadPic.bmp" />
+    <Image Include="..\pic\menu\OpenPic.bmp" />
+    <Image Include="..\pic\menu\SavePic.bmp" />
+    <Image Include="..\pic\shem\Text01.bmp" />
+    <Image Include="..\pic\shem\Text02.bmp" />
+    <Image Include="..\pic\shem\Text03.bmp" />
+    <Image Include="..\pic\shem\Text04.bmp" />
+    <Image Include="..\pic\shem\Text05.bmp" />
+    <Image Include="..\pic\shem\Text06.bmp" />
+    <Image Include="..\pic\shem\Text07.bmp" />
+    <Image Include="..\pic\shem\Text08.bmp" />
+    <Image Include="..\pic\shem\Text09.bmp" />
+    <Image Include="..\pic\shem\Text10.bmp" />
+    <Image Include="..\pic\shem\Text11.bmp" />
+    <Image Include="..\pic\shem\Text12.bmp" />
+    <Image Include="..\pic\shem\Text13.bmp" />
+    <Image Include="..\pic\table\AddPic.bmp" />
+    <Image Include="..\pic\table\ChangePic.bmp" />
+    <Image Include="..\pic\table\DelPic.bmp" />
+    <Image Include="..\pic\ya.bmp" />
+    <Image Include="res\prTextCard.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="prTextCard.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

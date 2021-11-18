@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="prTextCard.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="prTextCardDlg.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="MashCard.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="TechCard.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDetMake.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="DLGDopInf.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="prTextCard.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="prTextCardDlg.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MashCard.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="TechCard.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDetMake.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="DLGDopInf.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="prTextCard.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\prTextCard.rc2">
+      <Filter>Файлы ресурсов</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\prTextCard.ico">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\Dim.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\ya.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\dlg1Text1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\dlg1Text2.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\menu\SavePic.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\bitmap1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\menu\OpenPic.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\menu\LoadPic.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\table\AddPic.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\table\ChangePic.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\table\DelPic.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\..\1.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text01.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text02.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text03.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text04.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text05.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text06.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text07.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text08.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text09.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text10.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text11.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text12.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\shem\Text13.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\Цех.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\Уч..bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\PM.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\Oпер.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\Код, наименование операции.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\Уч.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\РМ.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\Опер.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\Наименование операции.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\M K\Наименование деталей, сборочных единиц, материалов.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\M K\Обозначение, код.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\M K\ОПП.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\M K\EB.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\M K\КИ.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\M K\Н. расх..bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Служебные символы.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Приспособления, вспомогательный инструмент(2).bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\Код, наименование оборудования.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\CM.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\Проф.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\P.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\УТ.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\КР.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\КОИД.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\EH.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\ОП.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\Кшт..bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\Тпз.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\Тшт..png">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\B\Тшт..bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\1txt.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Детали в сборке%27\Наименование детали.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Детали в сборке%27\Позиция детали в сборке.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Разраб.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Безымянный.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Принял.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Утвердил.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Н. контр.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Доп. инф.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Обазначение номера изделия.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Обозначение основного док.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Общее количество листов.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Порядковый номер листа.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Наименование организации.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Код клас. групп.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Обазначение документа.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Литера.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Наименование изделия.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Ед. норм.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\Окно %27Дополнительная информация МК%27\Обазначение изделия.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\A\Обозначение документа1111.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+    <Image Include="..\pic\card\M K\EH11111.bmp">
+      <Filter>Файлы ресурсов</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
